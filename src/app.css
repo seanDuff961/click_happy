@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*MOBILE FIRST*/
+/*mobile*/
+
+/* all devices are larger than 320px */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url('./background.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.signup-form-container {
+  top: 0;
+  margin: 0px 0px 20px 0px;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+.signup-title {
+  padding: 15px;
+  color: #A1CCCE;
+  text-align: center;
+}
+
+.submit-button {
+  margin: 20px 0px 20px 0px;
+  font-size: 1rem;
+  background-color: #A1CCCE;
+  color: #ffffff;
+  padding: 15px;
+  border: 2px solid #000000;
+}
+
+.input-form {
+  border: 2px solid #000000;
+  margin: 20px 0px 20px 0px;
+}
+
+.main-title {
+  color: #A1CCCE;
+}
+
+.main-container {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 25px;
+  text-align: center;
+  border: 3px solid #000000;
+}
+
+.mouse {
+  width: 65%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.counter {
+  border: 2px solid #000000;
+  padding: 5px;
+  margin: 20px 0;
+  font-size: 25px;
+  width: 130px;
+  text-align: center;
+  display: inline-block;
+  color: #000000;
+}
+
+.timer-container {
+  border: 2px solid #000000;
+  padding: 5px;
+  margin: 20px 0;
+  font-size: 25px;
+  width: 130px;
+  text-align: center;
+  display: inline-block;
+  color: #000000;
+}
+
+.title {
+  font-family: 'Arial';
+}
+
+.title > h1 {
+  font-size: 39px;
+}
+
+.title > h3 {
+  color: #000000;
+  font-size: 17px;
+}
+
+.max-score-container {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 25px;
+  text-align: center;
+  border: 3px solid #000000;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.max-score-title {
+  color: #A1CCCE;
+}
+
+.leaderboard-container {
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.leaderboard-title {
+  margin: 20px 0px 20px 0px;
+  color: #A1CCCE;
+}
+
+/* Changes signup and max-score position only for tablet/desktop */
+
+@media (min-width: 1024px) {
+  .container {
+    position: relative;
+    width: calc(70% - 400px) !important;
+  }
+
+  .signup-form-container {
+    position: absolute;
+    left: -270px;
+    top: 0;
+    margin: 0;
+    height: 290px;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+  }
+
+  .signup-title {
+    padding: 15px;
+    color: #A1CCCE;
+  }
+
+  .title > h1 {
+    font-size: 50px;
+  }
+
+  .main-container {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 25px;
+    text-align: center;
+    border: 3px solid #000000;
+  }
+
+  .right-container {
+    position: absolute;
+    right: -220px;
+    top: 0;
+    margin: 0;
+    height: 150px;
+  }
+
+  .max-score-container {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 25px;
+    text-align: center;
+    border: 3px solid #000000;
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .max-score-inner-container {
+    border: 2px solid #000000;
+  }
+
+  .leaderboard-container {
+    border: 3px solid #000000;
+    margin-top: 20px;
+    text-align: center;
+    background: #ffffff;
+  }
+
+  .leaderboard-title {
+    color: #A1CCCE;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+/* @font-face {
+  font-family: 'sugarloaf_demoregular';
+  src: url('/src/sugarloaf_demo-webfont.woff') format('font-woff2'),
+       url('/src/sugarloaf_demo-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
