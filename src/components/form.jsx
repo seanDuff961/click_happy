@@ -2,16 +2,15 @@ import React from 'react'
 
 class Form extends React.Component {
   constructor() {
-    super()
-//    this.handleSubmit = this.handleSubmit.bind(this);
-    //this.handleChange = this.handleChange.bind(this);
+    super();
     this.state = {
       username: '',
     }
   }
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log(this.state)
+    console.log('statteeeee', this.state);
+    
     this.setState({
       username: ''
     })

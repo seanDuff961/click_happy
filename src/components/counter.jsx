@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import image from '../mouse.png'; // Tell Webpack this JS file uses this image
+import image from '../assets/images/mouse.png'; // Tell Webpack this JS file uses this image
 
 class Counter extends Component {
   state = {
