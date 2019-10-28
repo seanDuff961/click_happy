@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app';
 import 'bootstrap/dist/css/bootstrap.css';
-import Counter from './components/counter';
+//import Counter from './components/counter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

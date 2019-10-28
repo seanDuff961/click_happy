@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import image from '../assets/images/mouse.png'; // Tell Webpack this JS file uses this image
-
+//import image from '../assets/images/mouse.png'; // Tell Webpack this JS file uses this image
 //return highest count from all counts in database
 
 class MaxScore extends Component {
