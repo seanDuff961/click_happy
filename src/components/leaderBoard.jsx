@@ -1,18 +1,19 @@
-import React from 'react';
+import React from "react";
 
 //display top 5 highest names + scores from database
 
 class LeaderBoard extends React.Component {
-  state = {
-    leader: ''
-   }
-
   render() {
+    const { leaders } = this.props;
     return (
-    <>
-      <h3 className='leaderboard-title'>Leaderboard</h3>
-        {this.state.leaders}
-    </>
+      <>
+        <h3 className="leaderboard-title">Leaderboard</h3>
+        {leaders.map((leader, i) => (
+          <div key={i}>
+            {leader.username} - {leader.score}
+          </div>
+        ))}
+      </>
     );
   }
 }

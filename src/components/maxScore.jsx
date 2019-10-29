@@ -3,16 +3,14 @@ import React, { Component } from 'react';
 //return highest count from all counts in database
 
 class MaxScore extends Component {
-  state = {
-    count: 0
-  };
 
   render() {
+    const {maxScore} = this.props;
     return (
       <>
         <h3 className='max-score-title'>High Score</h3>
         <div className='max-score-inner-container'>
-        {this.state.count}
+        {maxScore}
         </div>
       </>
     );

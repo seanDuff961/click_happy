@@ -126,16 +126,34 @@ body {
 }
 
 .leaderboard-container {
-  text-align: center;
-  background-color: #ffffff;
   border: 3px solid #000000;
-  margin: 20px 0px 20px 0px;
-
+  margin-top: 20px;
+  text-align: center;
+  background: #ffffff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .leaderboard-title {
   margin: 20px 0px 20px 0px;
   color: #A1CCCE;
+}
+
+.reset-container {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  /*display: none;*/
+}
+
+.reset-button {
+  margin: 20px 0px 20px 0px;
+  font-size: 1rem;
+  background-color: #A1CCCE;
+  color: #ffffff;
+  padding: 15px;
+  border: 2px solid #000000;
 }
 
 /* Changes signup and max-score position only for tablet/desktop */
@@ -200,6 +218,7 @@ body {
     margin-top: 20px;
     text-align: center;
     background: #ffffff;
+    padding-bottom: 20px;
   }
 
   .leaderboard-title {
