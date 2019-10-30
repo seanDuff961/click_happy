@@ -9,6 +9,7 @@ import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createUser, getUsers } from "./actions/userActions";
 import { MAX_TIME } from "./utils";
+//import {advertisement} from "./assets/images/vistaprint-ad.jpeg";
 
 const initialState = {
   seconds: MAX_TIME,
@@ -49,7 +50,6 @@ class App extends React.Component {
       this.setState({ formSubmitted: false }, () => {
         const theInterval = setInterval(() => {
           const { seconds } = this.state;
-          //if (seconds > 0 && seconds <= 10) {
           if (seconds > 0 && seconds <= MAX_TIME) {
             this.setState({
               seconds: seconds - 1
@@ -64,7 +64,6 @@ class App extends React.Component {
         }, 1000);
       });
     }
-
     this.setState({ score: count });
   };
 
@@ -83,16 +82,22 @@ class App extends React.Component {
     return (
       <>
         <div className="container">
-          <div className="signup-form-container">
-            <div className="signup-title">
-              <h3>Enter Your Name</h3>
-              <Form
-                username={username}
-                handleInputChange={this.handleInputChange}
-                submitForm={this.submitForm}
-              />
+          <div className="left-container">
+            <div className="signup-form-container">
+              <div className="signup-title">
+                <h3>Enter Your Name</h3>
+                <Form
+                  username={username}
+                  handleInputChange={this.handleInputChange}
+                  submitForm={this.submitForm}
+                />
+              </div>
+            </div>
+            <div className="ad-container">
+              <img alt="advertisement" className="vistaprint" src={require('./assets/images/vistaprint-ad.jpeg')}/>
             </div>
           </div>
+
           <div className="main-container">
             <div className="title">
               <h1 className="main-title">Click Happy</h1>
