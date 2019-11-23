@@ -1,6 +1,6 @@
 import React from "react";
 
-//display top 5 highest names + scores from database
+//display top 4 highest names + scores from database
 
 class LeaderBoard extends React.Component {
   render() {

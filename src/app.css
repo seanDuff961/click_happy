@@ -209,11 +209,11 @@ body {
     background-color: #ffffff;
     box-shadow: inset 0px 0px 0px 5px lightgrey;
     display: flex;
-    /*width:100px;*/
   }
 
   .vistaprint {
     width: 235px;
+    height: 210px;
   }
 
   .signup-title {
