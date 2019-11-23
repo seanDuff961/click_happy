@@ -4,7 +4,7 @@ import axios from 'axios';
 export const createUser = userData => {
   return async dispatch => {
     try {
-      const {data} = await axios.post('/users', userData);
+      const {data} = await axios.post('/api/users', userData);
       dispatch(createUserSuccess(data));
     } catch (err) {
       dispatch(createUserFailure(err));
@@ -29,7 +29,7 @@ const createUserFailure = error => {
 export const getUsers = () => {
   return async dispatch => {
     try {
-      const {data} = await axios.get('/users');
+      const {data} = await axios.get('/api/users');
       dispatch(getUsersSuccess(data));
     } catch (err) {
       dispatch(getUsersFailure(err));
