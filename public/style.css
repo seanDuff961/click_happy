@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 60px;
-  /*background: linear-gradient(#F491AF, #8D82BC);*/
-  background: #F491AF;
+  /*background: linear-gradient(, #8D82BC);*/
+  background: ;
   color: #ffffff;
   text-align: center;
   border-top: 3px solid #000000;
@@ -22,8 +22,8 @@
     left: 0;
     width: 100%;
     height: 60px;
-    /*background: linear-gradient(#F491AF, #8D82BC);*/
-    background: #F491AF;
+    /*background: linear-gradient(, #8D82BC);*/
+    background: #10628B;
     color: #ffffff;
     text-align: center;
   }

@@ -17,9 +17,11 @@ db.sequelize.authenticate().then(() => {
       next();
     });
     app.use(express.json());
-    app.use(express.static(buildPath));
     app.use("/api", indexRouter);
-    app.get('*', (req, res) => res.sendFile(buildPath + '/index.html'));
+    if (process.env.NODE_ENV === 'production') {
+      app.use(express.static(buildPath));
+      app.get('*', (req, res) => res.sendFile(buildPath + '/index.html'));
+    }
     app.listen(PORT, () => console.log("started on " + PORT));
 
   }).catch(err => console.log('unable top connect to DB'));

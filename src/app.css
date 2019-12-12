@@ -21,9 +21,11 @@ html {
   width: 100%;
   height: 100%;
 }
-
+/*and actually, it's changed back to how it was before, ok. can you return it to the working state?*/
+/*maybe I'll just try closing and restarting VS Code*/
+/*because I've already command+z'd*/
 body {
-  background-image: url('./assets/images/background_4.jpg');
+  background-image: url('./assets/images/click_happy_background.png');
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -62,7 +64,7 @@ body {
 .submit-button {
   margin: 20px 0px 20px 0px;
   font-size: 1rem;
-  background-color: #F491AF;
+  background-color: #10628B;
   color: #ffffff;
   padding: 15px;
   border: 2px solid #000000;
@@ -78,7 +80,7 @@ body {
 }
 
 .main-title {
-  color: #10628B;;
+  color: #10628B;
 }
 
 .main-container {
@@ -176,7 +178,7 @@ body {
 .reset-button {
   margin: 20px 0px 20px 0px;
   font-size: 1rem;
-  background-color: #A1CCCE;
+  background-color: #10628B;
   color: #ffffff;
   padding: 15px;
   border: 2px solid #000000;

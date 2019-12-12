@@ -1,0 +1,24 @@
+React-scripts is an npm package used by create-react-app.
+
+npm start: "node server.js" is meant to be used in production. If you want to use it locally, you have to build the react app first.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+For dev mode: server-dev && client-dev.
+
+For dev mode, you starts server for client and server separately (frontend - 3000, backend: 3001)
+
+For prod mode, only a single server. (FE and BE - 3001)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+This app is set up so that 3001 only renders client in prod mode
+
+We are declaring what port the app runs on in index, not in package.json.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Dev mode is what's happening on your computer right now. this mode where we are writing code and all.
+
+Production is a cloud based environment where you deploy your app - Heroku, Netlify, AWS.
+
